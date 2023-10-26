@@ -37,7 +37,7 @@ function change_state(_state) {
 			if(_bombs_in_range > 0) {
 				for(i = 0; i < _bombs_in_range - 1; i++) {
 					var _bomb = _bombs[i]; 
-					if(_bomb.state == BOMB_STATE.OFF) {
+					if(_bomb && _bomb.state == BOMB_STATE.OFF) {
 						horizontal_speed = sign(_bomb.x - x) * 1.4;
 						break;
 					};
