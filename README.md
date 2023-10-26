@@ -4,7 +4,12 @@ Um jogo de plataforma que estou desenvolvendo através de um tutorial no Game Ma
 
 O tutorial que estou seguindo está disponível [aqui](https://www.youtube.com/watch?v=zPzBSDdBeoE&t=384s) e foi feito por `None`.
 
-Atualmente só tem um tipo de inimigo, os `Pigs` iniciais, e são necessário dois pulos do `King` para derrotá-lo, mas ele regenera vida se demorar muito e ainda é inofensivo pois falta fazer os ataques.
+Atualmente só tem um tipo de inimigo, os `Pigs` iniciais que acendem `Bombas`, e são necessário dois pulos do `King` para derrotá-lo, mas eles regeneram vida se demorar muito.
+
+# Preview
+![king vs pigs](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/gif_1.gif?raw=tru)
+
+O rei atualmente sequer toma dano... Sem chance para os porcos! Mas eles até que tentam ativando as bombas. Foi legal fazer eles correm até as bombas quando avistam o player!
 
 # Imagens
 ![primeira sala](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/img_1.png?raw=true)
