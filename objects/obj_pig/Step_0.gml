@@ -1,6 +1,6 @@
 var _in_ground = place_meeting(x, y + 1, obj_ground);
 
-if(_in_ground && horizontal_speed == 0 && alarm[0] == -1) {
+if(_in_ground && horizontal_speed == 0 && alarm[0] == -1 && life > 0) {
 	horizontal_speed = choose(-1, 1);
 	alarm[0] = in_time(2);
 };

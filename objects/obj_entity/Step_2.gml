@@ -7,7 +7,10 @@ if(_collide) {
 		x = _collide.bbox_right + x - bbox_left;
 	};
 	
-	sprite_index = sprite_on.idle;
+	if(!dead) {
+		sprite_index = sprite_on.idle;
+	};
+	
 	horizontal_speed = 0;
 };
 
