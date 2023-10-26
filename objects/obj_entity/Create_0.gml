@@ -1,8 +1,10 @@
-horizontal_speed = 0;
-vertical_speed = 0;
+event_inherited();
+
 sprite_on = scr_set_entity_sprites(name);
 dead = false;
 default_jump_button = vk_space;
+hitted = false;
+invencible = false;
 
 /// @param {Bool} _can_jump
 /// @param {Constant.VirtualKey} _key

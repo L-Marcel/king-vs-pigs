@@ -18,7 +18,7 @@ if (hitted && alarm[11] == -1) {
 	};
 	
 	if(life > 0) {
-		alarm[11] = in_time(.8);
+		alarm[11] = in_time(invencibility_duration);
 	} else if(!dead) {
 		dead = true;
 		alarm[10] = -1;

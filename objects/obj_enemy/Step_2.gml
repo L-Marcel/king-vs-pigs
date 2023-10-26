@@ -5,10 +5,7 @@ if(hitted && life > 0) {
 } else if(
 	dead && 
 	(
-		(
-			alarm[10] != -1 && 
-			sprite_index != sprite_on.dead
-		) || alarm[11] != -1 || 
+		alarm[11] != -1 || 
 		(
 			sprite_index != sprite_on.damaged &&
 			sprite_index != sprite_on.dead
@@ -19,3 +16,9 @@ if(hitted && life > 0) {
 	alarm[10] = -1;
 	alarm[11] = -1;
 }; 
+
+if(dead && image_alpha > 0 && image_speed == 0 && sprite_index == sprite_on.dead) {
+	image_alpha -= 0.005;
+} else if(dead && image_alpha == 0) {
+	instance_destroy();
+};

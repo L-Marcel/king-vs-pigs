@@ -1,6 +1,6 @@
 var _in_ground = place_meeting(x, y + 1, obj_ground);
 
-if(_in_ground && horizontal_speed == 0 && alarm[0] == -1 && life > 0) {
+if(_in_ground && sprite_index == sprite_on.idle && horizontal_speed == 0 && alarm[0] == -1 && life > 0) {
 	horizontal_speed = choose(-1, 1);
 	alarm[0] = in_time(2);
 };
@@ -21,3 +21,18 @@ if(!can_fall) {
 };
 
 event_inherited();
+
+player_alert();
+
+if(state == PIG_STATE.RUNNING_TO_BOMB) {
+	var _in_colision_with_bomb = instance_place(x, y, obj_bomb);
+	
+	if(
+		_in_colision_with_bomb
+		&& _in_colision_with_bomb.state == BOMB_STATE.OFF
+	) {
+		horizontal_speed = 0;
+		interacting_with_bomb = _in_colision_with_bomb.id;
+		change_state(PIG_STATE.LIGHTING_BOMB);
+	};
+};
