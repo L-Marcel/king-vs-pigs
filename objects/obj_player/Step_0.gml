@@ -25,10 +25,12 @@ if(!invencible && !hitted && _enemy && !_jumpped_in_a_head && !_enemy.dead) {
 	receive_damage(_enemy.damage);
 } else if(hitted) {
 	sprite_index = sprite_on.damaged;
+	
+	with_gravity = false;
 	horizontal_speed = 0;
 	if(alarm[11] == -1) {
-		alarm[11] = in_time(invencibility_duration * .25);
+		alarm[11] = in_time(invencibility_duration * .15);
 	};
 } else if(!hitted && invencible && alarm[10] == -1) {
-	alarm[10] = in_time(invencibility_duration * .75);
+	alarm[10] = in_time(invencibility_duration * .85);
 };

@@ -7,11 +7,13 @@ if(_is_running && !hitted) {
 	
 try_jump(_in_ground);
 	
-if(!_in_ground && !flying) {
+if(!_in_ground && !flying && with_gravity) {
 	vertical_speed += gravity_force;
 	if(vertical_speed > 0 && !dead) {
 		sprite_index = sprite_on.fall;
 	};
+} else if(!with_gravity) {
+	vertical_speed = 0;
 } else if(_in_ground && _is_running && !dead) {
 	sprite_index = sprite_on.run;
 } else if(!dead && life > 0) {

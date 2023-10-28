@@ -14,5 +14,5 @@ function receive_damage(_damage, _id = id) {
 	_id.invencible = true;
 	_id.life -= _damage;
 	_id.sprite_index = sprite_on.damaged;
-	_id.image_alpha = 0.8;
+	_id.image_alpha = 0.75;
 };
