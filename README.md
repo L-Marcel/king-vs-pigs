@@ -16,4 +16,6 @@ O rei atualmente sequer toma dano... Sem chance para os porcos! Mas eles até qu
 
 # Dev Note
 
-Está muito divertido pensar nas diversas formas de inteção entre os objetos, o jogador e os inimigos. Quero trazer coisas além do tutorial, e com minha cara.
+Está muito divertido pensar nas diversas formas de interação entre os objetos, o jogador e os inimigos. Quero trazer coisas além do tutorial, e com minha cara. Estou ansioso para ver o resultado final!
+
+Fica muito fácil só chegar na porta também né? Dá para melhorar.
