@@ -1,1 +1,0 @@
-ajust_resolution(1280, 720, 2);

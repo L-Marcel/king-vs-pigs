@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "spr_cannon",
   "bbox_bottom": 17,
-  "bbox_left": 0,
+  "bbox_left": 22,
   "bbox_right": 23,
   "bbox_top": 0,
   "bboxMode": 2,

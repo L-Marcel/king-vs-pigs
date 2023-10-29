@@ -34,3 +34,20 @@ if(!invencible && !hitted && _enemy && !_jumpped_in_a_head && !_enemy.dead) {
 } else if(!hitted && invencible && alarm[10] == -1) {
 	alarm[10] = in_time(invencibility_duration * .85);
 };
+
+switch(action) {
+	case PLAYER_ACTION.OUT:
+		sprite_index = spr_player_out;
+		horizontal_speed = 0;
+		vertical_speed = 0;
+		break;
+	case PLAYER_ACTION.IN:
+		sprite_index = spr_player_in;
+		horizontal_speed = 0;
+		vertical_speed = 0;
+		break;
+	case PLAYER_ACTION.NONE:
+		break;
+	default:
+		break;
+};

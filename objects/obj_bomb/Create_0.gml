@@ -1,7 +1,8 @@
 event_inherited();
 
+need_layer_changed = false;
+created_by = -1;
 damage = 2;
-danger = false;
 state = BOMB_STATE.OFF;
 explosion_in = in_time(timer);
 targeted = false;

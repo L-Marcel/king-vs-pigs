@@ -1,0 +1,1 @@
+bomb_destroyed = true;

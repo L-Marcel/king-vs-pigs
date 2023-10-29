@@ -19,3 +19,15 @@ enum CANNON_STATE {
 	OFF,
 	ON
 }
+
+enum DOOR_STATE {
+	CLOSING,
+	OPENING,
+	CLOSED
+}
+
+enum PLAYER_ACTION {
+	IN,
+	OUT,
+	NONE
+}

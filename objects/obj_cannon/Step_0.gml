@@ -15,3 +15,14 @@ switch(state) {
 if(alarm == -1 && reloading) {
 	alarm[0] = in_time(min_interval);
 };
+
+if(sprite_index == spr_cannon_on && image_index == image_number - 1) {
+	var _bomb = instance_create_layer(x - image_xscale * 18,y - 2, layer, obj_bomb);
+	
+	with(_bomb) {
+		horizontal_speed = -(0.8 + random_range(0, 1)) * other.image_xscale;
+		state = BOMB_STATE.ON;
+	};
+	
+	state = CANNON_STATE.OFF;
+};

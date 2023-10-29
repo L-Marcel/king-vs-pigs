@@ -6,6 +6,7 @@ inputs = {
 	jump: ord("W"),
 };
 
+action = PLAYER_ACTION.OUT;
 default_jump_button = inputs.jump;
 
 /// @param {Real} _damage

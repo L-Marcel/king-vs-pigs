@@ -1,5 +1,6 @@
 event_inherited();
 
+can_jump = true;
 sprite_on = scr_set_entity_sprites(name);
 dead = false;
 default_jump_button = vk_space;

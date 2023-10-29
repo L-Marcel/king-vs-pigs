@@ -5,7 +5,7 @@ if(_is_running && !hitted) {
 	image_xscale = sign(horizontal_speed);
 };
 	
-try_jump(_in_ground);
+try_jump(_in_ground && can_jump);
 	
 if(!_in_ground && !flying && with_gravity) {
 	vertical_speed += gravity_force;
