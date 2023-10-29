@@ -2,8 +2,8 @@
 
 var _next_state = choose(PIG_STATE.IDLE, PIG_STATE.RUNNING);
 	
-if(life <= 0 || hitted) {
-	_next_state = 0;
+if(life <= 0) {
+	will_dead = true;
 };
 	
 change_state(_next_state);

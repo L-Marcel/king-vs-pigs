@@ -27,6 +27,8 @@ switch(action) {
 		
 		image_xscale = 1;
 		break;
+	case PLAYER_ACTION.ATTACK:
+		break;
 	case PLAYER_ACTION.NONE:
 		break;
 	default:

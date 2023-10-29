@@ -1,3 +1,4 @@
+global.switchs = 0;
 global.part_system = part_system_create();
 
 if(!debug_mode) {

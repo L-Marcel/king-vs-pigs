@@ -22,7 +22,7 @@ if(sprite_index == spr_wall_cannon_on && image_index == image_number - 1) {
 	var _ball = instance_create_layer(x - image_xscale * 18,y - 6, layer, obj_cannon_ball);
 	
 	with(_ball) {
-		horizontal_speed = -1 * other.image_xscale;
+		horizontal_speed = -(1.8) * other.image_xscale;
 		state = BOMB_STATE.ON;
 	};
 	

@@ -3,12 +3,25 @@ event_inherited();
 state = PIG_STATE.IDLE;
 interacting_with_bomb = 0;
 interacting_with_cannon = 0;
+interacting_with_player = 0;
+can_attack = true;
+attack_interval = 3;
 
 /// @param {Real} _state
 function change_state(_state) {
 	state = _state;
+	
+	if(will_dead || dead) {
+		return;
+	};
+	
+	if(hitted) {
+		state = PIG_STATE.IDLE;
+	};
+	
 	switch(_state) {
 		case PIG_STATE.DEAD:
+			will_dead = true;
 			break;
 		case PIG_STATE.IDLE:
 			horizontal_speed = 0;
@@ -38,6 +51,8 @@ function change_state(_state) {
 				};
 			};
 			
+			change_state(PIG_STATE.IDLE);
+
 			break;
 		case PIG_STATE.LIGHTING_CANNON:
 			sprite_index = spr_enemy_pig_lighting;
@@ -46,6 +61,29 @@ function change_state(_state) {
 		case PIG_STATE.LIGHTING_BOMB:
 			sprite_index = spr_enemy_pig_lighting;
 			horizontal_speed = 0;
+			break;
+		case PIG_STATE.WILL_ATTACK:
+			if(!hitted) {
+				horizontal_speed = sign(interacting_with_player.x - x);
+			};
+			
+			break;
+		case PIG_STATE.ATTACKING:
+			var _player = instance_find(obj_player, 0);
+			
+			if(_player.y < y) {
+				image_xscale = 1;
+			} else {
+				image_xscale = sign(_player.x - x);
+			};
+			
+			can_attack = false;
+			alarm[1] = in_time(attack_interval);
+			alarm[2] = in_time(.4);
+			sprite_index = sprite_on.attack
+			image_index = 0;
+			horizontal_speed = 0;
+			with_gravity = false;
 			break;
 		default:
 			break;
@@ -78,9 +116,12 @@ function player_alert() {
 			horizontal_speed = sign(_cannon.x - x) * 1.5;
 			alarm[0] = -1;
 			change_state(PIG_STATE.RUNNING_TO_CANNON);
-		} else {
-			_player = collision_circle(x, y, 64, obj_player, false, false);
-			if(_player) {
+		} else if(!_cannon) {
+			_player = collision_circle(x, y, 40, obj_player, false, false);
+			if(_player && can_attack) {
+				interacting_with_player = _player.id;
+				change_state(PIG_STATE.WILL_ATTACK);
+			} else if(collision_circle(x, y, 70, obj_player, false, false)) {
 				change_state(PIG_STATE.RUNNING_TO_BOMB);
 			};
 		};

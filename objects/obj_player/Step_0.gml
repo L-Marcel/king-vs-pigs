@@ -35,6 +35,26 @@ if(!invencible && !hitted && _enemy && !_jumpped_in_a_head && !_enemy.dead) {
 	alarm[10] = in_time(invencibility_duration * .85);
 };
 
+if(
+	keyboard_check(inputs.attack) && 
+	action == PLAYER_ACTION.NONE &&
+	can_attack &&
+	attacks_in_air > 0
+) {
+	action = PLAYER_ACTION.ATTACK;
+	can_attack = false;
+	alarm[9] = in_time(attack_interval);
+	attacks_in_air--;
+	
+	var _attack_wave = instance_create_layer(x, y, layer, obj_player_attack_wave);
+	_attack_wave.damage = damage;
+	_attack_wave.image_xscale = image_xscale;
+};
+
+if(alarm[11] != -1 && action == PLAYER_ACTION.ATTACK) {
+	action = PLAYER_ACTION.NONE;
+};
+
 switch(action) {
 	case PLAYER_ACTION.OUT:
 		sprite_index = spr_player_out;
@@ -46,8 +66,26 @@ switch(action) {
 		horizontal_speed = 0;
 		vertical_speed = 0;
 		break;
+	case PLAYER_ACTION.ATTACK:
+		if(sprite_index != sprite_on.attack) {
+			sprite_index = sprite_on.attack;
+			image_index = 0;
+		};
+		
+		horizontal_speed = 0;
+		vertical_speed = 0;
+		with_gravity = false;
+		
+		break;
 	case PLAYER_ACTION.NONE:
 		break;
 	default:
 		break;
 };
+
+if(vertical_speed == 0 && with_gravity = true && action != PLAYER_ACTION.ATTACK) {
+	attacks_in_air = max_attacks_in_air;
+};
+
+var _door = instance_place(x, y, obj_door);
+can_jump = !_door || _door.start;

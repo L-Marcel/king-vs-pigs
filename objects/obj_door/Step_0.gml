@@ -5,17 +5,15 @@ switch(state) {
 		sprite_index = spr_door;
 		
 		if(_player && !start) {
-			_player.can_jump = false;
-			
 			if(keyboard_check(_player.inputs.jump) && !global.in_transition) {
 				global.in_transition = true;
 				state = DOOR_STATE.OPENING;
 				_player.action = PLAYER_ACTION.IN;
+				_player.x = x;
+				_player.y = y;
 				layer_sequence_create("Transition", _player.x, _player.y - 14, seq_in);
+				alarm[1] = in_time(2);
 			};
-		} else if(!_player) {
-			_player = layer_instance_get_instance(obj_player);
-			_player.can_jump = true;
 		};
 		
 		break;
@@ -29,11 +27,11 @@ switch(state) {
 		if(image_index == image_number - 1) {
 			image_speed = 0;
 		};
+		
 		break;
-	case DOOR_STATE.CLOSING:
-		if(sprite_index != spr_door_closing) {
-			sprite_index = spr_door_closing;
-			image_speed = initial_image_speed;
+	case DOOR_STATE.UNLOCKING:
+		if(sprite_index != spr_door_unlocking) {
+			sprite_index = spr_door_unlocking;
 			image_index = 0;
 		};
 		
@@ -41,6 +39,9 @@ switch(state) {
 			state = DOOR_STATE.CLOSED;
 		};
 		
+		break;
+	case DOOR_STATE.LOCKED:
+		sprite_index = spr_door_locked;
 		break;
 	default:
 		break;

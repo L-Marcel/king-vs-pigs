@@ -8,8 +8,8 @@ switch(state) {
 		sprite_index = spr_bomb_on;
 		explosion_in--;
 		
-		image_xscale += .003 * sign(image_xscale);
-		image_yscale += .003;
+		image_xscale /= 0.998;
+		image_yscale /= 0.998;
 		
 		
 		if(explosion_in <= 0) {
@@ -30,8 +30,10 @@ switch(state) {
 	case BOMB_STATE.BOOM:
 		sprite_index = spr_bomb_boom;
 
-		image_xscale += .02 * sign(image_xscale);
-		image_yscale += .02;
+		if(abs(image_xscale) <= 2) {
+			image_xscale /= 0.995;
+			image_yscale /= 0.995;
+		};
 		
 		var _player = instance_place(x, y, obj_player);
 		if(_player) {
@@ -41,6 +43,7 @@ switch(state) {
 				};
 			};
 		};
+		
 		break;
 	default:
 		break;

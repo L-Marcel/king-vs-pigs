@@ -12,19 +12,33 @@ if(_wall_collide) {
 	alarm[0] = in_time(choose(0, 1));
 };
 
-if(!can_fall) {
-	var _will_fall = !place_meeting(x + horizontal_speed * (move_speed + 24), y + 1, obj_ground);
-	
-	if(_will_fall) {
-		horizontal_speed = choose(0, -1) * horizontal_speed ;
-	};
-};
-
 event_inherited();
 
 player_alert();
 
+if(hitted && state != PIG_STATE.IDLE) {
+	state = PIG_STATE.IDLE;
+};
+
 switch(state) {
+	case PIG_STATE.ATTACKING:
+		if(sprite_index != sprite_on.attack) {
+			sprite_index = sprite_on.attack;
+		};
+		
+		break;
+	case PIG_STATE.WILL_ATTACK:
+		alarm[0] = -1;
+		
+		var _player = collision_line(x - 32, y, x + 32, y - 29, obj_player, false, false);
+
+		if(_player) {
+			change_state(PIG_STATE.ATTACKING);
+		} else if(alarm[3] == -1) {
+			alarm[3] = in_time(1);
+		};
+		
+		break;
 	case PIG_STATE.RUNNING_TO_CANNON:
 		var _in_colision_with_cannon = instance_place(x, y - 4, obj_cannon);
 		alarm[0] = -1;
@@ -58,4 +72,12 @@ switch(state) {
 		break;
 	default:
 		break;
+};
+
+if(!can_fall) {
+	var _will_fall = !place_meeting(x + horizontal_speed * (move_speed + 24), y + 1, obj_ground);
+	
+	if(_will_fall) {
+		change_state(PIG_STATE.IDLE);
+	};
 };

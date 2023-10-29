@@ -1,5 +1,6 @@
 event_inherited();
 
+will_dead = false;
 can_jump = true;
 sprite_on = scr_set_entity_sprites(name);
 dead = false;
