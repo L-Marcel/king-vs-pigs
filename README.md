@@ -12,11 +12,8 @@ Ps: o `FPS` do Gif é limitado em `20`.
 
 ![king vs pigs](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/gif_1.gif?raw=tru)
 
-O rei atualmente sequer toma dano... Sem chance para os porcos! Mas eles até que tentam ativando as bombas. Foi legal fazer eles correm até as bombas quando avistam o player e ativarem os canhões quando a distância for favorável!
+O rei atualmente sequer toma dano... Sem chance para os porcos! Mas eles até que tentam ativando as bombas e canhões!
 
-# Imagens
-Levemente desatualizadas...
+# Dev Note
 
-![primeira sala](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/img_1.png?raw=true)
-![atacando o porco](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/img_2.png?raw=true)
-![porcos mortos](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/img_3.png?raw=true)
+Está muito divertido pensar nas diversas formas de inteção entre os objetos, o jogador e os inimigos. Quero trazer coisas além do tutorial, e com minha cara.
