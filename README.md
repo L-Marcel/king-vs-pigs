@@ -1,21 +1,33 @@
-# Kings VS Pigs
+# Sumário
 
-Um jogo de plataforma que estou desenvolvendo através de um tutorial no Game Maker. Ainda está bem incompleto, e por essa razão não vou disponibilizar ainda um executável.
+- [King Vs Pigs](#king-vs-pigs)
+- [Últimas atualizações](#últimas-atualizações)
+- [Prévia](#prévia)
+- [Instalação](#instalação)
+
+# King VS Pigs
+
+Um jogo de plataforma que estou desenvolvendo através de um tutorial no Game Maker. Ainda vou adicionar mais coisas, mas já tem bastante coisa!
 
 O tutorial que estou seguindo está disponível [aqui](https://www.youtube.com/watch?v=zPzBSDdBeoE&t=384s) e foi feito por `None`.
 
-Atualmente só tem um tipo de inimigo, os `Pigs` iniciais que acendem `Bombas` e ativam `Canhões`. São necessários dois pulos do `King` para derrotá-los, mas eles regeneram vida se demorar muito!
+# Últimas atualizações
+Atualmente tem dois tipos de inimigos, ambos `Pigs` que acendem `Bombas`, ativam `Canhões` e atacam diretamente o `King`. E agora o `King` já conseguiu força suficiente para usar seu martelo! Dá até para rebater projeteis se for habilidoso...
 
-# Preview
+Mas os `Pigs` já não estão muito atrás! Agora eles causam dano ao jogador.
+
+# Prévia
 
 Ps: o `FPS` do Gif é limitado em `20`.
 
 ![king vs pigs](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/gif_1.gif?raw=tru)
 
-O rei atualmente sequer toma dano... Sem chance para os porcos! Mas eles até que tentam ativando as bombas e canhões!
+![king vs pigs](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/gif_2.gif?raw=tru)
 
-# Dev Note
+> Bugs? Sim, tem bugs.
 
-Está muito divertido pensar nas diversas formas de interação entre os objetos, o jogador e os inimigos. Quero trazer coisas além do tutorial, e com minha cara. Estou ansioso para ver o resultado final!
+# Instalação
 
-Fica muito fácil só chegar na porta também né? Dá para melhorar.
+Clique [aqui]() para baixar o instalador. Aviso: existe uma chance de seu antivirus implicar comigo.
+
+> Falta bastante coisa... Mas está bem legal!
