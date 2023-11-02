@@ -28,6 +28,6 @@ Ps: o `FPS` do Gif é limitado em `20`.
 
 # Instalação
 
-Clique [aqui]() para baixar o instalador. Aviso: existe uma chance de seu antivirus implicar comigo.
+Clique [aqui](https://github.com/L-Marcel/king-vs-pigs/raw/master/King%20VS%20Pigs.zip) para baixar o instalador. Aviso: existe uma chance de seu antivirus implicar comigo.
 
 > Falta bastante coisa... Mas está bem legal!
