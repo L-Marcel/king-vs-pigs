@@ -3,6 +3,7 @@
 - [King Vs Pigs](#king-vs-pigs)
 - [Últimas atualizações](#últimas-atualizações)
 - [Prévia](#prévia)
+- [Teclas](#teclas)
 - [Instalação](#instalação)
 
 # King VS Pigs
@@ -16,18 +17,29 @@ Atualmente tem dois tipos de inimigos, ambos `Pigs` que acendem `Bombas`, ativam
 
 Mas os `Pigs` já não estão muito atrás! Agora eles causam dano ao jogador.
 
+Já tem sons, mais nada de músicas ainda...
+
 # Prévia
 
 Ps: o `FPS` do Gif é limitado em `20`.
 
-![king vs pigs](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/gif_1.gif?raw=tru)
+![king vs pigs](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/game_1.gif?raw=tru)
 
-![king vs pigs](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/gif_2.gif?raw=tru)
+![king vs pigs](https://github.com/L-Marcel/king-vs-pigs/blob/master/images/game_2.gif?raw=tru)
 
 > Bugs? Sim, tem bugs.
+
+# Teclas
+
+- `w` - pulo / entrar na porta
+- `d` - direita
+- `a` - esquerda
+- `s` - baixo
+- `j` - ataque
 
 # Instalação
 
 Clique [aqui](https://github.com/L-Marcel/king-vs-pigs/raw/master/King%20VS%20Pigs.zip) para baixar o instalador. Aviso: existe uma chance de seu antivirus implicar comigo.
 
 > Falta bastante coisa... Mas está bem legal!
+> Pena que vou ter que dar umas pausas... As minhas provas vem ai!
