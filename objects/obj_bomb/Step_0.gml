@@ -14,6 +14,10 @@ switch(state) {
 		
 		if(explosion_in <= 0) {
 			state = BOMB_STATE.BOOM;
+			horizontal_speed = 0;
+			vertical_speed = 0;
+			with_gravity = false;
+			play_sound(snd_explosion);
 		};
 		
 		if(horizontal_speed != 0) {

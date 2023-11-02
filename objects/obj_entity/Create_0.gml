@@ -23,6 +23,10 @@ function try_jump(
 	var _trying_jump = name == "player" && keyboard_check_pressed(_key);
 	
 	if((_trying_jump && _can_jump) || _force_jump) {
+		if(_trying_jump) {
+			audio_play_sound(snd_jump, 1, false, 0.35);
+		};
+		
 		_sprite_index = sprite_on.jump;
 		vertical_speed = -_jump_force;
 	};

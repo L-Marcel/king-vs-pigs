@@ -1,3 +1,5 @@
+event_inherited();
+
 state = CANNON_STATE.OFF;
 targeted = false;
 min_interval = 3;

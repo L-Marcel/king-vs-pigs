@@ -1,3 +1,19 @@
+dead = life <= 0;
+if(dead) {
+	image_alpha = 0;
+	horizontal_speed = 0;
+	with_gravity = false;
+	invencible = true;
+	can_attack = false;
+	can_jump = false;
+};
+
+if(!global.in_transition && dead) {
+	global.in_transition = true;
+	layer_sequence_create("Transition", x, y, seq_dead);
+	alarm[8] = in_time(6);
+};
+
 event_inherited();
 viewport_follow(id);
 

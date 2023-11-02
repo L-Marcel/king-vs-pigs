@@ -4,6 +4,7 @@ switch(state) {
 		break;
 	case CANNON_STATE.ON:
 		if(sprite_index != spr_cannon_on) {
+			play_sound(snd_cannon_shoot);
 			sprite_index = spr_cannon_on;
 			image_index = 0;
 		};

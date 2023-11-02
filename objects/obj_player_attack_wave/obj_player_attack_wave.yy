@@ -10,12 +10,17 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_cannon_ball","path":"objects/obj_cannon_ball/obj_cannon_ball.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_sound_controller","path":"objects/obj_sound_controller/obj_sound_controller.yy",},"propertyId":{"name":"is_player","path":"objects/obj_sound_controller/obj_sound_controller.yy",},"value":"True",},
+  ],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_sound_controller",
+    "path": "objects/obj_sound_controller/obj_sound_controller.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

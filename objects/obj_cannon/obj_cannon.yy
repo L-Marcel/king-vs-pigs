@@ -14,7 +14,10 @@
     "name": "Misc",
     "path": "folders/Objects/Misc.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_sound_controller",
+    "path": "objects/obj_sound_controller/obj_sound_controller.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

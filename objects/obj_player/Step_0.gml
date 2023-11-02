@@ -1,3 +1,5 @@
+audio_listener_position(x, y, 0);
+
 var _left, _right, _jump;
 
 _left = keyboard_check(inputs.left);
@@ -6,7 +8,7 @@ _right = keyboard_check(inputs.right);
 horizontal_speed = (_right - _left);
 
 var _jumpped_in_a_head = false;
-if(vertical_speed > 0) {
+if(vertical_speed > 0 && !hitted) {
 	var _enemy = instance_place(x, y + 1, obj_enemy);
 	
 	if(_enemy && !_enemy.hitted) {
@@ -43,6 +45,7 @@ if(
 ) {
 	action = PLAYER_ACTION.ATTACK;
 	can_attack = false;
+	play_sound(snd_player_attack);
 	alarm[9] = in_time(attack_interval);
 	attacks_in_air--;
 	

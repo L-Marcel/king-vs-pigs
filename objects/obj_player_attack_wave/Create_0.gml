@@ -1,3 +1,5 @@
+event_inherited();
+
 damage = 0;
 impact = 1.5;
 image_alpha = 0;

@@ -1,0 +1,1 @@
+audio_emitter_free(sound_emitter);

@@ -37,10 +37,13 @@ function viewport_follow(_obj) {
 		var _cx = camera_get_view_x(_camera);
 		var _cy = camera_get_view_y(_camera);
 		
+		var _vx = lerp(_cx, _x, 0.2);
+		var _vy = lerp(_cy, _y, 0.2);
+		
 		camera_set_view_pos(
 			_camera,
-			lerp(_cx, _x, 0.2),
-			lerp(_cy, _y, 0.2)
-		)
+			_vx,
+			_vy
+		);
 	};
 };

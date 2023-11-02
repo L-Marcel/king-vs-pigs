@@ -1,3 +1,5 @@
+event_inherited();
+
 state = CANNON_STATE.OFF;
 interval = 6;
 reloading = false;

@@ -1,5 +1,5 @@
 with(other) {
-	receive_damage(damage);
+	receive_damage(other.damage);
 };
 
 instance_destroy();

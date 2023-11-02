@@ -1,4 +1,5 @@
 initial_image_speed = image_speed;
+depth += 1;
 
 if(start) {
 	state = DOOR_STATE.CLOSED;

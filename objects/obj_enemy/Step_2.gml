@@ -2,6 +2,7 @@ event_inherited();
 
 if(hitted && life > 0) { 
 	sprite_index = sprite_on.damaged;
+	with_gravity = true;
 } else if(
 	dead && 
 	(
@@ -15,6 +16,7 @@ if(hitted && life > 0) {
 	sprite_index = sprite_on.damaged;
 	alarm[10] = -1;
 	alarm[11] = -1;
+	with_gravity = true;
 }; 
 
 if(dead && image_alpha > 0 && image_speed == 0 && sprite_index == sprite_on.dead) {
