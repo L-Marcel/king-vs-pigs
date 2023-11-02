@@ -1,3 +1,7 @@
+if(keyboard_check_pressed(vk_f11) && start) {
+	window_set_fullscreen(!window_get_fullscreen());
+};
+
 var _player = instance_place(x, y, obj_player);
 
 switch(state) {

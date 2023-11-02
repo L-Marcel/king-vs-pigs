@@ -5,6 +5,7 @@
 - [Prévia](#prévia)
 - [Teclas](#teclas)
 - [Instalação](#instalação)
+- [Créditos adicionais](#créditos-adicionais)
 
 # King VS Pigs
 
@@ -17,7 +18,7 @@ Atualmente tem dois tipos de inimigos, ambos `Pigs` que acendem `Bombas`, ativam
 
 Mas os `Pigs` já não estão muito atrás! Agora eles causam dano ao jogador.
 
-Já tem sons, mais nada de músicas ainda...
+Coloquei uma música!
 
 # Prévia
 
@@ -36,6 +37,7 @@ Ps: o `FPS` do Gif é limitado em `20`.
 - `a` - esquerda
 - `s` - baixo
 - `j` - ataque
+- `f11` - alternar tela cheia
 
 # Instalação
 
@@ -43,3 +45,17 @@ Clique [aqui](https://github.com/L-Marcel/king-vs-pigs/raw/master/King%20VS%20Pi
 
 > Falta bastante coisa... Mas está bem legal!
 > Pena que vou ter que dar umas pausas... As minhas provas vem ai!
+
+# Créditos adicionais
+
+Maior parte dos sprites:
+- Por Pixel Frog | https://pixelfrog-assets.itch.io/kings-and-pigs
+
+Música:  
+- Street Fight Brasileiro por Punch Deck | https://soundcloud.com/punch-deck 
+  Música promovida por https://www.chosic.com/free-music/all/
+  Creative Commons Attribution 3.0 Unported License 
+  https://creativecommons.org/licenses/by/3.0/ escritura.en_US
+
+Efeitos sonoros:
+- Usei um gerador: https://sfxr.me/ (gostei!)
