@@ -9,7 +9,7 @@ switch(state) {
 		sprite_index = spr_door;
 		
 		if(_player && !start) {
-			if(keyboard_check(_player.inputs.jump) && !global.in_transition) {
+			if(keyboard_check(_player.inputs.jump) && _player.vertical_speed == 0 && !global.in_transition) {
 				global.in_transition = true;
 				state = DOOR_STATE.OPENING;
 				_player.action = PLAYER_ACTION.IN;
