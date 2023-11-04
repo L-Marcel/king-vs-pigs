@@ -18,7 +18,9 @@ Atualmente tem dois tipos de inimigos, ambos `Pigs` que acendem `Bombas`, ativam
 
 Mas os `Pigs` já não estão muito atrás! Agora eles causam dano ao jogador.
 
-Coloquei uma música!
+O jogo está repleto de sons e tem duas músicas para não ficar muito repetitivo com o tempo!
+
+> Não ficar repetitivo principalmente para quem está testando, porque o jogo está bem curtinho! kkkkk
 
 # Prévia
 
@@ -35,7 +37,7 @@ Ps: o `FPS` do Gif é limitado em `20`.
 - `w` - pulo / entrar na porta
 - `d` - direita
 - `a` - esquerda
-- `s` - baixo
+- `s` - descer plataforma
 - `j` - ataque
 - `f11` - alternar tela cheia
 
