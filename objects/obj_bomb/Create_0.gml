@@ -1,6 +1,6 @@
 event_inherited();
 
-need_layer_changed = false;
+static_object = true;
 created_by = -1;
 damage = 2;
 state = BOMB_STATE.OFF;

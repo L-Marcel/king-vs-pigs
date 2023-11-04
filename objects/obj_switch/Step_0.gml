@@ -4,6 +4,7 @@ switch(state) {
 		break;
 	case SWITCH_STATE.CHANGING:
 		if(sprite_index != spr_switch_changing) {
+			play_sound(snd_machine);
 			image_index = 0;
 			sprite_index = spr_switch_changing;
 		};

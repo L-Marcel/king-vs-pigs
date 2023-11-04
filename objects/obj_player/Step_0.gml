@@ -1,6 +1,8 @@
+can_down_ground = keyboard_check(inputs.down);
+
 audio_listener_position(x, y, 0);
 
-var _left, _right, _jump;
+var _left, _right;
 
 _left = keyboard_check(inputs.left);
 _right = keyboard_check(inputs.right);
@@ -15,7 +17,9 @@ if(vertical_speed > 0 && !hitted) {
 		_jumpped_in_a_head = true;
 		try_jump(false, inputs.jump, true);
 		_enemy.hitted = true;
+		_enemy.head_hitted = true;
 		_enemy.life -= damage / 1.5;
+		play_sound(snd_enemy_damaged,,1.5);
 	};
 };
 

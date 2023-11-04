@@ -1,3 +1,5 @@
+event_inherited();
+
 initial_image_speed = image_speed;
 depth += 1;
 

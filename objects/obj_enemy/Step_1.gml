@@ -1,8 +1,16 @@
 if (hitted && alarm[11] == -1) {
 	if(!dead) {
+		var _player = instance_find(obj_player, 0);
+
 		try_jump(false,,true,,1);
 		
-		var _knockback = random_range(-8, 8);
+		var _direction = 0;
+		
+		if(_player && !head_hitted) {
+			_direction = sign(x - _player.x);
+		};
+		
+		var _knockback = _direction * random_range(20, 40);
 	
 		var _collide = instance_place(x + _knockback, y, obj_ground);
 
@@ -16,6 +24,8 @@ if (hitted && alarm[11] == -1) {
 			x += _knockback;
 		};
 	};
+	
+	head_hitted = false;
 	
 	if(life > 0) {
 		alarm[11] = in_time(invencibility_duration);

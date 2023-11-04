@@ -48,7 +48,7 @@ Clique [aqui](https://github.com/L-Marcel/king-vs-pigs/raw/master/King%20VS%20Pi
 
 # Créditos adicionais
 
-Maior parte dos sprites:
+Praticamente todos os sprites:
 - Por Pixel Frog | https://pixelfrog-assets.itch.io/kings-and-pigs
 
 Música:  
@@ -57,5 +57,13 @@ Música:
   Creative Commons Attribution 3.0 Unported License 
   https://creativecommons.org/licenses/by/3.0/ escritura.en_US
 
+- Chase by Alexander Nakarada | https://creatorchords.com
+Music promoted by https://www.chosic.com/free-music/all/
+Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/ 
+
 Efeitos sonoros:
-- Usei um gerador: https://sfxr.me/ (gostei!)
+- Maioria: usei um gerador - https://sfxr.me/
+- Sons dos porcos: https://tuna.voicemod.net/sound/8b15db2a-4233-49f2-ba28-817bd55a8c3a
+- Porta destravando: https://tuna.voicemod.net/sound/97782266-c090-471a-bf59-3a7b4a9db242
+- Porta abrindo / Alavanca: https://tuna.voicemod.net/sound/8f2d4d24-f4ff-477c-b1f3-bb5e190a1739

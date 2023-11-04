@@ -7,6 +7,7 @@ dead = false;
 default_jump_button = vk_space;
 hitted = false;
 invencible = false;
+head_hitted = false;
 
 /// @param {Bool} _can_jump
 /// @param {Constant.VirtualKey} _key
@@ -23,7 +24,7 @@ function try_jump(
 	var _trying_jump = name == "player" && keyboard_check_pressed(_key);
 	
 	if((_trying_jump && _can_jump) || _force_jump) {
-		if(_trying_jump) {
+		if(_trying_jump || (_force_jump && name == "player")) {
 			audio_play_sound(snd_jump, 1, false, 0.35);
 		};
 		
